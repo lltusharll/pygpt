@@ -8,13 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
     const input = document.getElementById('input').value;
 
-    // Send a POST request to the backend with the input text
-    fetch('/api', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ input })
+    // Send a GET request to the backend with the input text in the query string
+    fetch(`/api?input=${input}`, {
+      method: 'GET',  // Use the GET method
     })
       .then(response => response.json())
       .then((data) => {
