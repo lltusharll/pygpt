@@ -1,7 +1,7 @@
-# First, let's install the necessary packages
-!pip install flask
-!pip install torch
-!pip install transformers
+# # First, let's install the necessary packages
+# !pip install flask
+# !pip install torch
+# !pip install transformers
 
 # Next, let's import the necessary modules
 import torch
